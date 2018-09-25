@@ -1,6 +1,6 @@
 package com.vikrambpgc.Experiements;
 
 public interface Interface2 {
-	Integer max = new Integer(10);
-	public boolean eat(Object head);
+    Integer max = new Integer(10);
+    public boolean eat(Object head);
 }

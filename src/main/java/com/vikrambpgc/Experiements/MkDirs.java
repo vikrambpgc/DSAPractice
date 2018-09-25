@@ -10,7 +10,7 @@ public class MkDirs {
       /*
       try{      
          // returns pathnames for files and directory
-    	 //Texts, TutorialsPoint, Java are all folders only.
+         //Texts, TutorialsPoint, Java are all folders only.
          f = new File("Texts/TutorialsPoint/Java");     
          // create directories
          bool = f.mkdirs();        

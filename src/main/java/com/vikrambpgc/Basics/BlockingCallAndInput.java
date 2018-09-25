@@ -18,7 +18,7 @@ class BlockingCallAndInput {
 
         Set<Integer> inputNumbersSet = new HashSet<Integer>(numberStringArrayLength); 
         for(int i=0; i < numberStringArrayLength;i++) {
-        	inputNumbersSet.add(Integer.parseInt(numberStringArray[i]));
+            inputNumbersSet.add(Integer.parseInt(numberStringArray[i]));
         }
 
         int k = Integer.parseInt(br.readLine());

@@ -10,26 +10,26 @@ class StackBracket {
         Stack<Character> st = new Stack<Character>();
         
         for (i = 0; i < strLength; i++) {
-        	
-        	if (Character.isLetter(temp[i])) continue;
-        	
-        	if (temp[i] == '{' || temp[i] == '(' || temp[i] == '[') {
-        		st.add(temp[i]);
-        		continue;
-        	}
-        	
-        	if (temp[i] == '}' && st.isEmpty() != true && st.peek() == '{') {
-        		st.pop();
-        		continue;
-        	} else if (temp[i] == ')' && st.isEmpty() != true && st.peek() == '(') {
-        		st.pop();
-        		continue;
-        	} else if (temp[i] == ']' && st.isEmpty() != true && st.peek() == '[') {
-        		st.pop();
-        		continue;
-        	} else {
-        		return 0;
-        	}
+            
+            if (Character.isLetter(temp[i])) continue;
+            
+            if (temp[i] == '{' || temp[i] == '(' || temp[i] == '[') {
+                st.add(temp[i]);
+                continue;
+            }
+            
+            if (temp[i] == '}' && st.isEmpty() != true && st.peek() == '{') {
+                st.pop();
+                continue;
+            } else if (temp[i] == ')' && st.isEmpty() != true && st.peek() == '(') {
+                st.pop();
+                continue;
+            } else if (temp[i] == ']' && st.isEmpty() != true && st.peek() == '[') {
+                st.pop();
+                continue;
+            } else {
+                return 0;
+            }
         }
         
         if (st.isEmpty()) return 1;
