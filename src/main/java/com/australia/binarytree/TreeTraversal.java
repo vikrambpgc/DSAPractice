@@ -1,11 +1,6 @@
 package com.australia.binarytree;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Queue;
-
-
+import java.util.*;
 
 
 public class TreeTraversal {
@@ -52,6 +47,25 @@ public class TreeTraversal {
             }
 
 
+        }
+    }
+
+    public static void iterativeInorderTraversal(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode current = root;
+
+        while (!stack.isEmpty() || current != null) {
+            // Go as far left as possible
+            while (current != null) {
+                stack.push(current);
+                current = current.left;
+            }
+
+            // Visit the node and go right
+            current = stack.pop();
+            System.out.print(current.data + " ");
+
+            current = current.right;
         }
     }
 
