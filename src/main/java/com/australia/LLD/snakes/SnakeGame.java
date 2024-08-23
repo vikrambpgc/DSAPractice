@@ -1,4 +1,4 @@
-package com.australia.LLD;
+package com.australia.LLD.snakes;
 
 import java.util.Deque;
 import java.util.HashMap;
