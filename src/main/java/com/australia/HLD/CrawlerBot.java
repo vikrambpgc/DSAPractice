@@ -1,5 +1,8 @@
 package com.australia.HLD;
 /**
+ * https://www.linkedin.com/pulse/system-design-designing-web-crawler-shashank-singh-l1w4f/
+ *
+ *
  * Components:
  * URL Frontier:
  *      Data structure: Queue (e.g., LinkedList)
