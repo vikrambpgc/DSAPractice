@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.PriorityQueue;
 import java.util.*;
 
+/**
+ * Commodity price tracker code.
+ */
 class CommodityPriceTracker {
     private PriorityQueue<Integer> maxPriceQueue;
     private HashMap<Integer, Integer> priceMap;
