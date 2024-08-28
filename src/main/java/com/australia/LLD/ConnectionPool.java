@@ -17,6 +17,8 @@ public class ConnectionPool {
         } catch (InterruptedException e) {
             // Handle exception
         }
+
+        return null;
     }
 
     public void returnConnection(Connection conn) {
@@ -31,6 +33,7 @@ public class ConnectionPool {
 
     private Connection createNewConnection() {
         // Create a new database connection
+        return null;
     }
 
     public void shutdown() {

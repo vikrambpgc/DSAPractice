@@ -40,11 +40,11 @@ class ColorList {
     }
 }
 
-class User {
+class ColorPickerUser {
     private String email;
     private ColorList colorList;
 
-    public User(String email) {
+    public ColorPickerUser(String email) {
         this.email = email;
         this.colorList = new ColorList(email);
     }
@@ -67,34 +67,34 @@ class User {
 }
 
 public class ColorPicker {
-    private Map<String, User> users;
+    private Map<String, ColorPickerUser> users;
 
     public ColorPicker() {
         this.users = new HashMap<>();
     }
 
     public void registerUser(String email) {
-        users.put(email, new User(email));
+        users.put(email, new ColorPickerUser(email));
     }
 
     public void addColor(String email, Color color) {
-        User user = users.get(email);
-        if (user != null) {
-            user.addColor(color);
+        ColorPickerUser colorPickerUser = users.get(email);
+        if (colorPickerUser != null) {
+            colorPickerUser.addColor(color);
         }
     }
 
     public void removeColor(String email, Color color) {
-        User user = users.get(email);
-        if (user != null) {
-            user.removeColor(color);
+        ColorPickerUser colorPickerUser = users.get(email);
+        if (colorPickerUser != null) {
+            colorPickerUser.removeColor(color);
         }
     }
 
     public void shareColorList(String email, List<String> recipients) {
-        User user = users.get(email);
-        if (user != null) {
-            ColorList colorList = user.getColorList();
+        ColorPickerUser colorPickerUser = users.get(email);
+        if (colorPickerUser != null) {
+            ColorList colorList = colorPickerUser.getColorList();
             // Send color list to recipients via email
             System.out.println("Sharing color list with " + recipients);
         }

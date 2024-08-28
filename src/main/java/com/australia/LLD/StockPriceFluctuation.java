@@ -1,5 +1,9 @@
 package com.australia.LLD;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
 public class StockPriceFluctuation {
     int latestTime;
     // Store price of each stock at each timestamp.
@@ -7,7 +11,7 @@ public class StockPriceFluctuation {
     // Store stock prices in increasing order to get min and max price.
     TreeMap<Integer, Integer> priceFrequency;
 
-    public StockPrice() {
+    public StockPriceFluctuation() {
         latestTime = 0;
         timestampPriceMap = new HashMap<>();
         priceFrequency = new TreeMap<>();

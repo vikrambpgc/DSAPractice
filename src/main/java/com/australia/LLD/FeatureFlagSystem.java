@@ -8,7 +8,7 @@ public class FeatureFlagSystem {
 }
 
 // FeatureFlag.java
-public class FeatureFlag {
+class FeatureFlag {
     private String name;
     private boolean enabled;
     private List<Rule> rules;
@@ -65,10 +65,10 @@ class EnvironmentVariableRule extends Rule {
 }
 
 // FeatureFlagService.java
-class FeatureFlagService {
+class FFService {
     private Map<String, FeatureFlag> featureFlags;
 
-    public FeatureFlagService() {
+    public FFService() {
         featureFlags = new HashMap<>();
     }
 

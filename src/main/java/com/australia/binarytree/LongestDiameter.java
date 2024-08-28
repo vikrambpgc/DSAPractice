@@ -1,7 +1,5 @@
 package com.australia.binarytree;
 
-import apple.laf.JRSUIUtils;
-
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

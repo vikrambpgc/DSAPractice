@@ -40,20 +40,20 @@ package com.australia.HLD;
  */
 
 public class CrawlerBot {
-    private UrlFrontier urlFrontier;
-    private UrlFilter urlFilter;
-    private HttpClient httpClient;
-    private HtmlParser htmlParser;
-    private DataStorage dataStorage;
-    private ThreadPool threadPool;
-
-    public CrawlerBot() {
-        // Initialize components
-    }
-
-    public void startCrawling() {
-        // Start crawling process
-    }
+//    private UrlFrontier urlFrontier;
+//    private UrlFilter urlFilter;
+//    private HttpClient httpClient;
+//    private HtmlParser htmlParser;
+//    private DataStorage dataStorage;
+//    private ThreadPool threadPool;
+//
+//    public CrawlerBot() {
+//        // Initialize components
+//    }
+//
+//    public void startCrawling() {
+//        // Start crawling process
+//    }
 }
 
 /**
