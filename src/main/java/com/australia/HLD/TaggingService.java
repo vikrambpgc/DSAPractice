@@ -35,12 +35,15 @@ public class TaggingService {
  *  Product_Tags Table (many-to-many relationship)
  *      productId (foreign key)
  *      tagId (foreign key)
+ *
  *  Autocomplete Search
  *      Use a library like Elasticsearch or Algolia to implement autocomplete search for tags.
  *      Index tag names and descriptions for search.
+ *
  *  API Implementation
  *      Use a framework like Express.js or Django to implement the API endpoints.
  *      Use a database like MySQL or PostgreSQL to store tags and products.
+ *
  *  Security Considerations
  *      Implement authentication and authorization to restrict access to tag creation and product tagging.
  *      Validate user input to prevent SQL injection and cross-site scripting (XSS) attacks.
