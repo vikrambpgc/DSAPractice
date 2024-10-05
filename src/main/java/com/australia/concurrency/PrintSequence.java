@@ -1,8 +1,11 @@
 package com.australia.concurrency;
 
 class Printer {
-    private static int num = 1;
+    private int num;
 
+    public Printer() {
+        num = 1;
+    }
     public synchronized void printEven() {
         while (num <= 10) {
             if (num % 2 == 0) {

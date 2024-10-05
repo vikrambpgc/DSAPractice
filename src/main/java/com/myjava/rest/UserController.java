@@ -1,6 +1,9 @@
 package com.myjava.rest;
 
 import org.springframework.web.bind.annotation.*;
+/**
+ * https://spring.io/guides/tutorials/rest
+ */
 
 /**
  * In this example:

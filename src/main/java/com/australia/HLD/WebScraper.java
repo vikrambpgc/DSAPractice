@@ -89,6 +89,7 @@ class DataProcessor {
     public String processData(String data) {
         // Clean, transform, and format data
         // Return processed data as a string
+        return null;
     }
 }
 
@@ -104,6 +105,7 @@ class API {
     public String scrapeData(String url, String dataFormat) {
         // Send request to scheduler
         // Return processed data to client
+        return null;
     }
 }
 

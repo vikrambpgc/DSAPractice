@@ -26,6 +26,37 @@ public class TreeTraversal {
         }
     }
 
+    // Method to print binary tree level by level
+    public static void printLevelOrder(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            int levelSize = queue.size();
+
+            // Print nodes at current level
+            for (int i = 0; i < levelSize; i++) {
+                TreeNode node = queue.poll();
+                System.out.print(node.data + " ");
+
+                // Add children to queue for next level
+                if (node.left != null) {
+                    queue.add(node.left);
+                }
+                if (node.right != null) {
+                    queue.add(node.right);
+                }
+            }
+
+            // Move to next line after each level
+            System.out.println();
+        }
+    }
+
     public static void dfsTraversal(TreeNode root) {
         if (root == null) {
             return;
